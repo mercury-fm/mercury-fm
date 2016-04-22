@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="keywords" content="podcast, mercury, advertisers, audience">
+        <meta name="description" content="Enjoy the podcast shows you love, upload original content, and share it all with friends, family, and the world on Mercury.fm.">
+        
+        <title>Mercury.fm Podcasts</title>
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Jura:400,500,300" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        
+        <!-- Styles -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" >
+        
+        <!-- Jquery --><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    </head>
+    
+    <body class="mercury">
+        <header class="page-header" id="site-header">
+            <div class="hero">
+                <div class="logo">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="container">
+                
+                <nav id="main-nav">
+                    <h2>Mercury.fm</h2>
+                    <ul>
+                        <li>
+                            <a href="#section-podcast-fans">Fans</a>
+                        </li>
+                        <li>
+                            <a href="#section-podcast-publishers">Publishers</a>
+                        </li>
+                        <li>
+                            <a href="#section-podcast-advertisers">Advertisers</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section id="podcast-fans">
+            <a id="section-podcast-fans" class="anchor"></a>
+            <div class="container">
+                <h2>Podcast Fans</h2>
+                <h3>Listen to the podcasts you already love, we'll recommend new shows that match your interests</h3>
+                <h3>Interacting with show hosts is now easier than ever</h3>
+                <a class="button" href="listeners.html">Learn more</a>
+            </div>
+        </section>
+        
+        <section id="podcast-publishers">
+            <a id="section-podcast-publishers" class="anchor"></a>
+            <div class="container">
+                <h2>Publishers</h2>
+                <h3>Stop worrying about hosting content, formatting XMLs, and re-posting episodes all over the internet</h3>
+                <h3>Begin monetizing new and existing content in one click</h3>
+                <h3>You produce great content, we'll take care of promoting your shows to new listeners</h3>
+                <a class="button dark" href="publishers.html">Learn more</a>
+            </div>
+        </section>
+        
+        <section id="podcast-advertisers">
+            <a id="section-podcast-advertisers" class="anchor"></a>
+            <div class="container">
+                <h2>Advertisers</h2>
+                <h3>Precise analytics for active podcast listeners, number of downloads, and listener demographics</h3>
+                <h3>Focus on defining your target audience, we'll make sure your advertisements reach the right audience</h3>
+                <h3>One-stop shop to leverage new and existing podcasts</h3>
+                <a class="button" href="advertisers.html">Learn more</a>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                <div class="colophon">
+                    <span>© 2016 Mercury.fm All rights reserved.</span>
+                </div>
+                
+                <div class="social">
+                    <a target="_blank" href="https://www.facebook.com/mercurypodcasts">
+                        <i class="icon-facebook"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/mercurypodcasts">
+                        <i class="icon-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        
+        <script>
+            
+        $(document).ready(function() {
+            // SMOOTH SCROLLING ANCHOR LINKS
+            $('a[href^="#"]').on('click',function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+            
+            // ADD CLASS TO HEADER ON SCROLL
+            $(window).scroll(function() {    
+                var scroll = $(window).scrollTop();
+            
+                if (scroll >= 150) {
+                    $("#main-nav").addClass("scrolled");
+                } else {
+                    $("#main-nav").removeClass("scrolled");
+                }
+            });
+        });
+        </script>
+    </body>
+</html>

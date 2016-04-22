@@ -1,0 +1,286 @@
+/**
+ * Profound Grid
+ * 
+ * Built in Sass (SCSS) this responsive/adaptive grid supports both fixed and fluid layouts, 
+ * relative and fixed gutters, as well as your choice of semantic markup or generic '.grid-x' classes.
+ * 
+ * The biggest difference to other grid systems is the use of negative margins for column
+ * placements, avoiding the subpixel rounding issues that usually break/uglify fluid layouts
+ * in some browsers.
+ * 
+ * Nested columns are supported too, without having to reset the grid on each level. 
+ *
+ * Credits/Inspiration:
+ * -------------------
+ * Semantic Grid: http://www.semantic.gs
+ * Susy: http://susy.oddbird.net
+ * Negative Grid: http://chrisplaneta.com/freebies/negativegrid-fluid-css-grid-by-chris-planeta/
+ *
+ * @author Profound Creative Studio
+ * @url http://www.profoundgrid.com
+ * @url http://www.weareprofound.com 
+ */
+/**
+ * Clearfix
+ */
+/**
+ * Legacy Clearfix
+ */
+/**
+ * Establish the grid-containing element.
+ */
+/**
+ * Align an element to the grid.
+ */
+/**
+ * Apply to any column to make it the last one of the current row.
+ */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?xr7e9c");
+  src: url("../fonts/icomoon.eot?xr7e9c#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?xr7e9c") format("truetype"), url("../fonts/icomoon.woff?xr7e9c") format("woff"), url("../fonts/icomoon.svg?xr7e9c#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-mic:before {
+  content: "\e902"; }
+
+.icon-facebook:before {
+  content: "\e900"; }
+
+.icon-twitter:before {
+  content: "\e901"; }
+
+html {
+  font-size: 50% !important; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  /* font-size: 100%; */
+  vertical-align: baseline;
+  background: transparent;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300; }
+
+h2 {
+  font-size: 4.5rem; }
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 3rem; }
+  @media only screen and (max-width: 680px) {
+    h3 {
+      font-size: 2rem;
+      line-height: 2.5rem; } }
+
+ul, ol, li, p, span, a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0.1rem; }
+  ul.important, ol.important, li.important, p.important, span.important, a.important {
+    font-weight: bold; }
+
+body {
+  background: #3B2BED;
+  color: white; }
+
+.container {
+  text-align: center;
+  padding: 0 20px; }
+  .container h2 {
+    margin-bottom: 25px; }
+
+section {
+  width: 100%;
+  margin: 0 0%;
+  margin: 0% auto;
+  padding: 10% 0;
+  color: white;
+  max-width: 768px; }
+  section#podcast-publishers {
+    background-color: white;
+    color: #3a3a3a; }
+  section .slash {
+    display: inline-block;
+    padding: 0 0.75rem;
+    font-weight: bold;
+    font-size: 1.9rem; }
+  section p, section h3 {
+    margin-bottom: 3rem; }
+
+a.anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top: -80px; }
+
+input.button, a.button {
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0.75rem 4rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  outline: none; }
+  input.button.dark, .advertisers #mc_embed_signup .button, .listeners #mc_embed_signup .button, .publishers #mc_embed_signup .button, a.button.dark {
+    color: #3a3a3a;
+    border: 2px solid #3a3a3a; }
+    input.button.dark:focus, .advertisers #mc_embed_signup .button:focus, .listeners #mc_embed_signup .button:focus, .publishers #mc_embed_signup .button:focus, a.button.dark:focus {
+      background-color: #3a3a3a;
+      color: white;
+      border-color: transparent; }
+  input.button:focus, a.button:focus {
+    background-color: white;
+    border-color: transparent;
+    color: #3B2BED; }
+
+.advertisers, .listeners, .publishers {
+  background-color: white;
+  color: #3a3a3a !important;
+  padding-top: 8rem; }
+  .advertisers h2, .listeners h2, .publishers h2 {
+    margin-bottom: 2.5rem; }
+  .advertisers section, .listeners section, .publishers section {
+    color: #3a3a3a; }
+    .advertisers section h2, .listeners section h2, .publishers section h2 {
+      font-size: 2.5rem;
+      line-height: 3rem; }
+      @media only screen and (max-width: 680px) {
+        .advertisers section h2, .listeners section h2, .publishers section h2 {
+          font-size: 2rem;
+          line-height: 2.5rem; } }
+    .advertisers section p.important, .listeners section p.important, .publishers section p.important {
+      margin-bottom: 1.5rem; }
+  .advertisers #mc_embed_signup, .listeners #mc_embed_signup, .publishers #mc_embed_signup {
+    background: transparent; }
+    .advertisers #mc_embed_signup .button, .listeners #mc_embed_signup .button, .publishers #mc_embed_signup .button {
+      background-color: transparent;
+      height: auto;
+      margin-top: 0.5rem;
+      font-size: 2rem;
+      padding: 0 4rem;
+      width: auto; }
+  .advertisers #mc_embed_signup_scroll input.email, .listeners #mc_embed_signup_scroll input.email, .publishers #mc_embed_signup_scroll input.email {
+    vertical-align: middle;
+    margin-bottom: 4px; }
+
+header .hero {
+  max-height: 90vh;
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+  background-image: url("../images/hero.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  padding: 40% 0 5%;
+  text-align: center; }
+  @media only screen and (max-width: 1288px) {
+    header .hero {
+      padding: 55% 0 5%; } }
+  @media only screen and (max-width: 680px) {
+    header .hero {
+      padding: 70% 0 5%; } }
+
+header .logo h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #3a3a3a;
+  color: white; }
+
+header .logo span {
+  background: white;
+  border-radius: 100%;
+  font-size: 8rem;
+  padding: 6px; }
+
+.container nav {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 6rem;
+  -webkit-transition: background-color 500ms;
+  -moz-transition: background-color 500ms;
+  -ms-transition: background-color 500ms;
+  -o-transition: background-color 500ms;
+  transition: background-color 500ms; }
+  .container nav.scrolled {
+    background-color: #3a3a3a; }
+    .container nav.scrolled ul {
+      max-height: 0; }
+  .container nav h1 {
+    font-weight: bolder;
+    color: white;
+    font-size: 4rem;
+    margin: 0.8rem 0 0; }
+  .container nav ul {
+    overflow: hidden;
+    *zoom: 1;
+    width: 100%;
+    margin: 0 0%;
+    position: relative;
+    -webkit-transition: max-height 500ms;
+    -moz-transition: max-height 500ms;
+    -ms-transition: max-height 500ms;
+    -o-transition: max-height 500ms;
+    transition: max-height 500ms;
+    max-height: 200px; }
+    .container nav ul li {
+      display: inline-block;
+      margin: 0 2%; }
+      .container nav ul li a {
+        display: inline-block;
+        font-size: 1.5rem;
+        line-height: 4rem;
+        white-space: nowrap;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0;
+        font-weight: bold;
+        color: white; }
+
+footer {
+  width: 100%;
+  padding: 10% 0;
+  background-color: white;
+  color: #3a3a3a; }
+  footer .center {
+    margin: 0 auto; }
+  footer .colophon div, footer .colophon p, footer .colophon a, footer .colophon span {
+    font-size: 1.5rem; }
+  footer .social {
+    padding-top: 5%; }
+  footer a {
+    text-decoration: none;
+    color: #3a3a3a;
+    font-size: 2rem;
+    padding: 4px; }
+  footer i {
+    padding: 4px;
+    border: solid 2px #3a3a3a;
+    border-radius: 100%; }

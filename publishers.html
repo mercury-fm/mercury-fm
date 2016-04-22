@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="keywords" content="podcast, mercury, share, publish">
+        <meta name="description" content="Monitizing your podcast doesn't have to be a hassle!  You focus on producing great content without the need for native ads, we'll take care of sourcing relevant advertisements.">
+        
+        <title>Mercury.fm Podcasts</title>
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Jura:400,500,300" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        
+        <!-- Styles -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" >
+        
+        <!-- Jquery --><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    </head>
+    
+    <body class="publishers">
+        <header class="page-header" id="site-header">
+            <div class="container">
+                <nav id="main-nav">
+                    <h1>Mercury.fm</h1>
+                    <ul>
+                        <li>
+                            <a href="listeners.html">Fans</a>
+                        </li>
+                        <li>
+                            <a href="#">Publishers</a>
+                        </li>
+                        <li>
+                            <a href="advertisers.html">Advertisers</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section>
+            <div class="container">
+                <h2>The future of podcasts is almost here!</h2>
+                <p>Monitizing your podcast doesn't have to be a hassle!  You focus on producing great content without the need for native ads, we'll take care of sourcing relevant advertisements.</p>
+                <p>Forget about hosting, distributing, XML configuration, and blanketing the internet with links back to your show.  Mercury listeners will discover and share your podcast organically without the need for constant self-promotion.</p>
+                </br>
+                <p class="important">Sign up below to be the first to know when Mercury has landed!</p>
+                <!-- Begin MailChimp Signup Form -->
+                <link href="http://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+                    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                </style>
+                <div id="mc_embed_signup">
+                <form action="http://mercury.us13.list-manage.com/subscribe/post?u=d494faa49b5ff8b0106c50cc5&amp;id=ddd7b01bf0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d494faa49b5ff8b0106c50cc5_ddd7b01bf0" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+                </div>
+
+                <!--End mc_embed_signup-->
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                <div class="colophon">
+                    <span>© 2016 Mercury.fm All rights reserved.</span>
+                </div>
+                
+                <div class="social">
+                    <a target="_blank" href="https://www.facebook.com/mercurypodcasts">
+                        <i class="icon-facebook"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/mercurypodcasts">
+                        <i class="icon-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        
+        <script>
+            
+        $(document).ready(function() {
+            // SMOOTH SCROLLING ANCHOR LINKS
+            $('a[href^="#"]').on('click',function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+            
+            // ADD CLASS TO HEADER ON SCROLL
+            $(window).scroll(function() {    
+                var scroll = $(window).scrollTop();
+            
+                if (scroll >= 150) {
+                    $("#main-nav").addClass("scrolled");
+                } else {
+                    $("#main-nav").removeClass("scrolled");
+                }
+            });
+        });
+        </script>
+    </body>
+</html>

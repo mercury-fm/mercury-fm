@@ -1,0 +1,33 @@
+footer {
+    width: 100%;
+    padding: 10% 0;
+    background-color: $background-light;
+    color: $text-dark;
+    
+    .center {
+        margin: 0 auto;
+    }
+    
+    .colophon {
+        div, p, a, span {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .social {
+        padding-top: 5%;
+    }
+    
+    a {
+        text-decoration: none;
+        color: $text-dark;
+        font-size: 2rem;
+        padding: 4px;
+    }
+    
+    i {
+        padding: 4px;
+        border: solid 2px $text-dark;
+        border-radius: 100%;
+    }
+}

@@ -1,0 +1,186 @@
+@import 'grid/grid';
+
+@import 'components/fonts';
+@import 'components/colors';
+
+$total_width: 100%;
+$container_margin: 0%;
+$gutter_width: 0%;
+$max_width: 960px;
+$section_margin: 10%;
+
+html {
+    font-size: 50% !important;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    /* font-size: 100%; */
+    vertical-align: baseline;
+    background: transparent;
+    
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    @media only screen and (max-width: 680px) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
+
+ul, ol, li, p, span, a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+    
+    &.important {
+        font-weight: bold;
+    }
+}
+
+body {
+    background: $background-primary;
+    color: $text-light;
+}
+
+.container {
+    text-align: center;
+    padding: 0 20px;
+    
+    h2 {
+        margin-bottom: 25px;
+    }
+}
+
+section {
+    @include container();
+    margin: $gutter_width auto;
+    padding: $section_margin 0;
+    color: $text-light;
+    max-width: 768px;
+    
+    &#podcast-publishers {
+        background-color: $background-light;
+        color: $text-dark;
+    }
+    
+    .slash {
+        display: inline-block;
+        padding: 0 0.75rem;
+        font-weight: bold;
+        font-size: 1.9rem;
+    }
+    
+    p, h3 {
+        margin-bottom: 3rem;
+    }
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -80px;
+}
+
+input.button,a.button {
+    background-color: transparent;
+    color: $text-light;
+    text-decoration: none;
+    border: 2px solid $text-light;
+    border-radius: 5px;
+    padding: 0.75rem 4rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    outline: none;
+    
+    &.dark {
+        color: $text-dark;
+        border: 2px solid $text-dark;
+        
+        &:focus {
+            background-color: $background-dark;
+            color: $background-light;
+            border-color: transparent;
+        }
+    }
+    
+    
+    &:focus {
+        background-color: $background-light;
+        border-color: transparent;
+        color: $background-primary;
+    }
+}
+
+.advertisers,.listeners,.publishers {
+    background-color: $background-light;
+    color: $text-dark !important;
+    padding-top: 8rem;
+        
+        h2 {
+            margin-bottom: 2.5rem;
+        }
+    
+    section {
+        color: $text-dark;
+        
+        h2 {
+            font-size: 2.5rem;
+            line-height: 3rem;
+            @media only screen and (max-width: 680px) {
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+        }
+        
+        p {
+            &.important {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    
+    #mc_embed_signup {
+        background: transparent;
+        
+        .button {
+            @extend input.button.dark;
+            background-color: transparent;
+            height: auto;
+            margin-top: 0.5rem;
+            font-size: 2rem;
+            padding: 0 4rem;
+            width: auto;
+        }
+    }
+    
+    #mc_embed_signup_scroll {
+        input.email {
+            vertical-align: middle;
+            margin-bottom: 4px;
+        }
+    }
+}
+
+@import 'components/header';
+@import 'components/nav';
+@import 'components/footer';
