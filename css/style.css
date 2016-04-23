@@ -237,13 +237,14 @@ header .logo span {
     background-color: #3a3a3a; }
     .container nav.scrolled ul {
       max-height: 0; }
-  .container nav h1 {
+  .container nav h1, .container nav h1 a {
     font-weight: bolder;
     color: white;
     font-size: 4rem;
-    margin: 0.8rem 0 0; }
+    margin: 0.8rem 0 0;
+    text-decoration: none; }
     @media only screen and (min-width: 768px) {
-      .container nav h1 {
+      .container nav h1, .container nav h1 a {
         display: inline-block;
         position: absolute;
         left: 0;
