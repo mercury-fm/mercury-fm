@@ -12,7 +12,11 @@
         -moz-transition: background-color $transition_time; 
         -ms-transition: background-color $transition_time; 
         -o-transition: background-color $transition_time; 
-        transition: background-color $transition_time; 
+        transition: background-color $transition_time;
+        
+        @media only screen and (min-width: 768px) {
+            display: inline-block;
+        }
         
         &.scrolled {
             background-color: $background-dark;
@@ -26,6 +30,13 @@
             color: $text-light;
             font-size: 4rem;
             margin: 0.8rem 0 0;
+            
+            @media only screen and (min-width: 768px) {
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                margin-left: 12px;
+            }
         }
         
         ul {
@@ -39,13 +50,19 @@
             transition: max-height $transition_time; 
             max-height: 200px;
             
+            @media only screen and (min-width: 768px) {
+                display: inline;
+                left: 0;
+                top: 8px;
+            }
+            
             li {
                 display: inline-block;
                 margin: 0 2%;
                 
                 a {
                     display: inline-block;
-                    font-size: 1.5rem;
+                    font-size: 2rem;
                     line-height: 4rem;
                     white-space: nowrap;
                     text-transform: uppercase;
@@ -53,6 +70,10 @@
                     padding: 0;
                     font-weight: bold;
                     color: $text-light;
+                    
+                    @media only screen and (max-width: 680px) {
+                        font-size: 1.5rem;
+                    }
                 }
             }
         }
