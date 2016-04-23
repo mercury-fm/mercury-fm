@@ -120,7 +120,7 @@ section {
   section .container {
     max-width: 768px;
     margin: 0% auto; }
-  section#podcast-publishers {
+  section:nth-child(odd) {
     background-color: white;
     color: #3a3a3a; }
   section .slash {
@@ -147,10 +147,10 @@ input.button, a.button {
   font-weight: bold;
   font-size: 2.5rem;
   outline: none; }
-  input.button.dark, .advertisers #mc_embed_signup .button, .listeners #mc_embed_signup .button, .publishers #mc_embed_signup .button, a.button.dark {
+  input.button.dark, .advertisers #mc_embed_signup .button, .listeners #mc_embed_signup .button, .publishers #mc_embed_signup .button, a.button.dark, section:nth-child(odd) a.button {
     color: #3a3a3a;
     border: 2px solid #3a3a3a; }
-    input.button.dark:focus, .advertisers #mc_embed_signup .button:focus, .listeners #mc_embed_signup .button:focus, .publishers #mc_embed_signup .button:focus, a.button.dark:focus {
+    input.button.dark:focus, .advertisers #mc_embed_signup .button:focus, .listeners #mc_embed_signup .button:focus, .publishers #mc_embed_signup .button:focus, a.button.dark:focus, section:nth-child(odd) a.button:focus {
       background-color: #3a3a3a;
       color: white;
       border-color: transparent; }

@@ -80,9 +80,13 @@ section {
         margin: $gutter_width auto;
     }
     
-    &#podcast-publishers {
+    &:nth-child(odd) {
         background-color: $background-light;
         color: $text-dark;
+        
+        a.button {
+            @extend a.button.dark;
+        }
     }
     
     .slash {
