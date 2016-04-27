@@ -7,7 +7,8 @@ $total_width: 100%;
 $container_margin: 0%;
 $gutter_width: 0%;
 $max_width: 960px;
-$section_margin: 6rem;
+$section_margin_top: 6rem;
+$section_margin_bottom: 7rem;
 
 html {
     font-size: 50% !important;
@@ -72,7 +73,7 @@ body {
 
 section {
     @include container();
-    padding: $section_margin 0;
+    padding: $section_margin_top 0 $section_margin_bottom;
     color: $text-light;
     
     .container {
@@ -184,6 +185,9 @@ input.button,a.button {
         input.email {
             vertical-align: middle;
             margin-bottom: 4px;
+        }
+        input.button {
+            @extend input.button;
         }
     }
 }

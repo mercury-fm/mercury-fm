@@ -115,7 +115,7 @@ body {
 section {
   width: 100%;
   margin: 0 0%;
-  padding: 6rem 0;
+  padding: 6rem 0 7rem;
   color: white; }
   section .container {
     max-width: 768px;
@@ -137,7 +137,7 @@ a.anchor {
   visibility: hidden;
   top: -80px; }
 
-input.button, a.button {
+input.button, .advertisers #mc_embed_signup_scroll input.button, .listeners #mc_embed_signup_scroll input.button, .publishers #mc_embed_signup_scroll input.button, a.button {
   background-color: transparent;
   color: white;
   text-decoration: none;
@@ -147,14 +147,14 @@ input.button, a.button {
   font-weight: bold;
   font-size: 2.5rem;
   outline: none; }
-  input.button.dark, .advertisers #mc_embed_signup .button, .listeners #mc_embed_signup .button, .publishers #mc_embed_signup .button, a.button.dark, section:nth-child(odd) a.button {
+  input.button.dark, .advertisers #mc_embed_signup .button, .listeners #mc_embed_signup .button, .publishers #mc_embed_signup .button, .advertisers #mc_embed_signup_scroll input.dark.button, .advertisers #mc_embed_signup_scroll #mc_embed_signup .button, .advertisers #mc_embed_signup #mc_embed_signup_scroll .button, .listeners #mc_embed_signup_scroll input.dark.button, .listeners #mc_embed_signup_scroll #mc_embed_signup .button, .listeners #mc_embed_signup #mc_embed_signup_scroll .button, .publishers #mc_embed_signup_scroll input.dark.button, .publishers #mc_embed_signup_scroll #mc_embed_signup .button, .publishers #mc_embed_signup #mc_embed_signup_scroll .button, a.button.dark, section:nth-child(odd) a.button {
     color: #3a3a3a;
     border: 2px solid #3a3a3a; }
-    input.button.dark:focus, .advertisers #mc_embed_signup .button:focus, .listeners #mc_embed_signup .button:focus, .publishers #mc_embed_signup .button:focus, a.button.dark:focus, section:nth-child(odd) a.button:focus {
+    input.button.dark:focus, .advertisers #mc_embed_signup .button:focus, .listeners #mc_embed_signup .button:focus, .publishers #mc_embed_signup .button:focus, .advertisers #mc_embed_signup_scroll input.dark.button:focus, .listeners #mc_embed_signup_scroll input.dark.button:focus, .publishers #mc_embed_signup_scroll input.dark.button:focus, a.button.dark:focus, section:nth-child(odd) a.button:focus {
       background-color: #3a3a3a;
       color: white;
       border-color: transparent; }
-  input.button:focus, a.button:focus {
+  input.button:focus, .advertisers #mc_embed_signup_scroll input.button:focus, .listeners #mc_embed_signup_scroll input.button:focus, .publishers #mc_embed_signup_scroll input.button:focus, a.button:focus {
     background-color: white;
     border-color: transparent;
     color: #3B2BED; }

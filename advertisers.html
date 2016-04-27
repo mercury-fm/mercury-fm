@@ -9,13 +9,12 @@
         <title>Mercury.fm Podcasts</title>
         
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Jura:400,500,300" rel="stylesheet" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href='css/raleway.css' rel='stylesheet' type='text/css'>
         
         <!-- Styles -->
         <link href="css/style.css" rel="stylesheet" type="text/css" >
         
-        <!-- Jquery --><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <!-- Jquery --><script src="libs/jquery/2.2.0/jquery.min.js"></script>
     </head>
     
     <body class="advertisers">
@@ -41,11 +40,12 @@
         <section>
             <div class="container">
                 <h2>The future of podcasts is almost here!</h2>
-                <p>Target your listening market, not specific podcasts or networks.  Leverage new and existing shows to further your advertising campaign.  Track campaign success with analytics based on actual listens rather than cryptic download counts.</p>
+                <p>Target your listening market, not specific podcasts or networks.  Leverage new and existing shows to further your advertising campaign.</p>
+                <p>Track campaign success with analytics based on actual listens rather than cryptic download counts.</p>
                 </br>
                 <p class="important">Sign up below to be the first to know when Mercury has landed!</p>
                 <!-- Begin MailChimp Signup Form -->
-                <link href="http://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+                <link href="css/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
                 <style type="text/css">
                     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
                     /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
@@ -83,35 +83,5 @@
                 </div>
             </div>
         </footer>
-        
-        <script>
-            
-        $(document).ready(function() {
-            // SMOOTH SCROLLING ANCHOR LINKS
-            $('a[href^="#"]').on('click',function (e) {
-                e.preventDefault();
-
-                var target = this.hash;
-                var $target = $(target);
-
-                $('html, body').stop().animate({
-                    'scrollTop': $target.offset().top
-                }, 900, 'swing', function () {
-                    window.location.hash = target;
-                });
-            });
-            
-            // ADD CLASS TO HEADER ON SCROLL
-            $(window).scroll(function() {    
-                var scroll = $(window).scrollTop();
-            
-                if (scroll >= 150) {
-                    $("#main-nav").addClass("scrolled");
-                } else {
-                    $("#main-nav").removeClass("scrolled");
-                }
-            });
-        });
-        </script>
     </body>
 </html>
