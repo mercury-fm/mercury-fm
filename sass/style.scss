@@ -81,9 +81,12 @@ section {
         margin: $gutter_width auto;
     }
     
-    &:nth-child(odd) {
+    &:nth-child(even) {
         background-color: $background-light;
         color: $text-dark;
+        background-image: url('../images/headphones-light.jpg');
+        background-position: 100% 50%;
+        background-size: cover;
         
         a.button {
             @extend a.button.dark;

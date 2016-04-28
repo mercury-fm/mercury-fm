@@ -1,22 +1,13 @@
 header {
     .hero {
-        max-height: 90vh;
         overflow: hidden;
         background-color: black;
         position: relative;
         background-image: url('../images/hero.jpg');
         background-position: 50% 50%;
         background-size: cover;
-        padding: 40% 0 5%;
         text-align: center;
-        
-        @media only screen and (max-width: 1288px) {
-            padding: 55% 0 5%;
-        }
-        
-        @media only screen and (max-width: 680px) {
-            padding: 70% 0 5%;
-        }
+        height: 70vh;
     }
     .logo {
         h1 {
