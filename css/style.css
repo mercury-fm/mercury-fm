@@ -37,8 +37,8 @@
  */
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?xr7e9c");
-  src: url("../fonts/icomoon.eot?xr7e9c#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?xr7e9c") format("truetype"), url("../fonts/icomoon.woff?xr7e9c") format("woff"), url("../fonts/icomoon.svg?xr7e9c#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?1hotyz");
+  src: url("../fonts/icomoon.eot?1hotyz#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?1hotyz") format("truetype"), url("../fonts/icomoon.woff?1hotyz") format("woff"), url("../fonts/icomoon.svg?1hotyz#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -55,11 +55,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-headphones:before {
+  content: "\e903"; }
+
+.icon-bullhorn:before {
+  content: "\e904"; }
+
 .icon-mic:before {
   content: "\e902"; }
 
 .icon-facebook:before {
   content: "\e900"; }
+
+.icon-instagram:before {
+  content: "\e905"; }
 
 .icon-twitter:before {
   content: "\e901"; }
@@ -115,17 +124,15 @@ body {
 section {
   width: 100%;
   margin: 0 0%;
-  padding: 6rem 0 7rem;
+  padding: 6rem 0 0;
   color: white; }
+  section:not(#how-it-works) {
+    background-color: white;
+    color: #3a3a3a; }
   section .container {
     max-width: 768px;
-    margin: 0% auto; }
-  section:nth-child(even) {
-    background-color: white;
-    color: #3a3a3a;
-    background-image: url("../images/headphones-light.jpg");
-    background-position: 100% 50%;
-    background-size: cover; }
+    margin: 0% auto;
+    padding-bottom: 7rem; }
   section .slash {
     display: inline-block;
     padding: 0 0.75rem;
@@ -133,6 +140,13 @@ section {
     font-size: 1.9rem; }
   section p, section h3 {
     margin-bottom: 3rem; }
+  section i {
+    font-size: 5.5rem; }
+
+.sepatator {
+  width: 90%;
+  margin: 0 5%;
+  border-bottom: 1px solid #cecece; }
 
 a.anchor {
   display: block;
@@ -150,10 +164,10 @@ input.button, .advertisers #mc_embed_signup_scroll input.button, .listeners #mc_
   font-weight: bold;
   font-size: 2.5rem;
   outline: none; }
-  input.button.dark, .advertisers #mc_embed_signup .button, .listeners #mc_embed_signup .button, .publishers #mc_embed_signup .button, .advertisers #mc_embed_signup_scroll input.dark.button, .advertisers #mc_embed_signup_scroll #mc_embed_signup .button, .advertisers #mc_embed_signup #mc_embed_signup_scroll .button, .listeners #mc_embed_signup_scroll input.dark.button, .listeners #mc_embed_signup_scroll #mc_embed_signup .button, .listeners #mc_embed_signup #mc_embed_signup_scroll .button, .publishers #mc_embed_signup_scroll input.dark.button, .publishers #mc_embed_signup_scroll #mc_embed_signup .button, .publishers #mc_embed_signup #mc_embed_signup_scroll .button, a.button.dark, section:nth-child(even) a.button {
+  input.button.dark, .advertisers #mc_embed_signup .button, .listeners #mc_embed_signup .button, .publishers #mc_embed_signup .button, .advertisers #mc_embed_signup_scroll input.dark.button, .advertisers #mc_embed_signup_scroll #mc_embed_signup .button, .advertisers #mc_embed_signup #mc_embed_signup_scroll .button, .listeners #mc_embed_signup_scroll input.dark.button, .listeners #mc_embed_signup_scroll #mc_embed_signup .button, .listeners #mc_embed_signup #mc_embed_signup_scroll .button, .publishers #mc_embed_signup_scroll input.dark.button, .publishers #mc_embed_signup_scroll #mc_embed_signup .button, .publishers #mc_embed_signup #mc_embed_signup_scroll .button, a.button.dark, section:not(#how-it-works) a.button {
     color: #3a3a3a;
     border: 2px solid #3a3a3a; }
-    input.button.dark:focus, .advertisers #mc_embed_signup .button:focus, .listeners #mc_embed_signup .button:focus, .publishers #mc_embed_signup .button:focus, .advertisers #mc_embed_signup_scroll input.dark.button:focus, .listeners #mc_embed_signup_scroll input.dark.button:focus, .publishers #mc_embed_signup_scroll input.dark.button:focus, a.button.dark:focus, section:nth-child(even) a.button:focus {
+    input.button.dark:focus, .advertisers #mc_embed_signup .button:focus, .listeners #mc_embed_signup .button:focus, .publishers #mc_embed_signup .button:focus, .advertisers #mc_embed_signup_scroll input.dark.button:focus, .listeners #mc_embed_signup_scroll input.dark.button:focus, .publishers #mc_embed_signup_scroll input.dark.button:focus, a.button.dark:focus, section:not(#how-it-works) a.button:focus {
       background-color: #3a3a3a;
       color: white;
       border-color: transparent; }

@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:    url('../fonts/icomoon.eot?xr7e9c');
-    src:    url('../fonts/icomoon.eot?xr7e9c#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?xr7e9c') format('truetype'),
-        url('../fonts/icomoon.woff?xr7e9c') format('woff'),
-        url('../fonts/icomoon.svg?xr7e9c#icomoon') format('svg');
+    src:    url('../fonts/icomoon.eot?1hotyz');
+    src:    url('../fonts/icomoon.eot?1hotyz#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?1hotyz') format('truetype'),
+        url('../fonts/icomoon.woff?1hotyz') format('woff'),
+        url('../fonts/icomoon.svg?1hotyz#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,11 +24,20 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-headphones:before {
+    content: "\e903";
+}
+.icon-bullhorn:before {
+    content: "\e904";
+}
 .icon-mic:before {
     content: "\e902";
 }
 .icon-facebook:before {
     content: "\e900";
+}
+.icon-instagram:before {
+    content: "\e905";
 }
 .icon-twitter:before {
     content: "\e901";
